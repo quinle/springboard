@@ -47,12 +47,12 @@ We use Logistic Regression, Gaussian Naive Bayes, LDA, Random Forest and Boostin
 
 * **Gradient Boosting:** 0.7684923076923077
   
-  ##6. Results
+  ## 6. Results
   
   Random forest performs the best with F1 score 0.92. After tuning using grid search, we end up with the model with max_features 0.2. Applying this model to the test data set, we obtain F1 score at 0.87. The confusion matrix is as follows.
   
    ![](./pictures/confusion_matrix.png)
   
-  ##7. Future improvements
+  ## 7. Future improvements
   
 Although the model yields very good result in prediction power, its training is quite slow due to the complexity of random forest with many features. We can improve the speed by more data cleaning and drop unnecessary columns. 
