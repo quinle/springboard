@@ -37,19 +37,20 @@ There are 384 columns in total, which is divided into 5 categories: delinquency 
   ## 5. Preprocessing and modeling
 We use Logistic Regression, Gaussian Naive Bayes, LDA, Random Forest and Boosting and check their performance. We use F1-score and cross validation with 10 folds to evaluate these models. The result are as follows.
 
-Logistic Regression:  0.7384672352995632
+* **Logistic Regression:**  0.7384672352995632
 
-Gaussian Naive Bayes: 0.6968165337948162
+* **Gaussian Naive Bayes:** 0.6968165337948162
 
-LDA: 0.7358437451324035
+* **LDA:** 0.7358437451324035
 
-Random Forest: 0.9214687500000001
+* **Random Forest:** 0.9214687500000001
 
-Gradient Boosting: 0.7684923076923077
+* **Gradient Boosting:** 0.7684923076923077
   
   ##6. Results
   
   Random forest performs the best with F1 score 0.92. After tuning using grid search, we end up with the model with max_features 0.2. Applying this model to the test data set, we obtain F1 score at 0.87. The confusion matrix is as follows.
+  
    ![](./pictures/confusion_matrix.png)
   
   ##7. Future improvements
